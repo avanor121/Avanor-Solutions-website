@@ -201,6 +201,7 @@ small {
 }
 .hero h1 span {
   color: var(--accent);
+  white-space: nowrap;
 }
 .hero p {
   font-size: 16px;
