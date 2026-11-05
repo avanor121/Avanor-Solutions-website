@@ -1,0 +1,85 @@
+/* Rules present in the live Oct 17 build but not in the Oct 16 source.
+   Ported verbatim from the live stylesheet; imported last so they win.
+   (Trade-VSL and scheduler-consent rules live in their own files.) */
+button,a{-webkit-tap-highlight-color:transparent}
+button:focus-visible,a:focus-visible{outline-offset:5px;outline:3px solid #538cf0}
+.button,.nav-cta{transition:transform .22s,box-shadow .22s,background-color .22s}
+.button:active,.nav-cta:active{transform:translateY(1px)scale(.98)}
+.center-phone{backface-visibility:hidden}
+.review-request{opacity:clamp(0, calc((.48 - var(--scene-progress,1)) * 9), 1)}
+.review-submitted{opacity:clamp(0, calc((var(--scene-progress,1) - .5) * 8), 1)}
+.review-stars i{--star:0;opacity:clamp(0, calc((var(--scene-progress,1) - .6 - var(--star) * .035) * 20), 1)}
+.review-stars i:nth-child(2){--star:1}
+.review-stars i:nth-child(3){--star:2}
+.review-stars i:nth-child(4){--star:3}
+.review-stars i:nth-child(5){--star:4}
+.booking-calendar{background:#f8faff;border:1px solid #dce5f2;border-radius:28px;box-shadow:0 30px 80px -30px #18365b30}
+.booking-calendar-header{background:#f8faff;padding:22px 28px}
+.booking-calendar iframe{color-scheme:light;background:#f8faff}
+.static-steps .editorial-story{--scene-progress:1;opacity:1;visibility:visible;pointer-events:auto;border-top:1px solid #dce5f280;gap:0;min-height:0;padding:72px 24px 52px;position:relative;inset:auto}
+.static-steps .editorial-story:nth-child(2n){background:radial-gradient(at 80% 60%,#dceafc99,#0000 65%),#f8faff}
+.static-steps .editorial-stage{flex:none;width:100%}
+.static-steps .scene-heading h2{text-wrap:balance;max-width:700px;margin:0 auto}
+.static-steps .purpose-motion{flex:0 0 80px;margin:28px auto 18px}
+.static-steps .center-phone{--phone-h:550px;width:calc(var(--phone-h) / 2.08);height:var(--phone-h);flex:0 0 var(--phone-h);will-change:auto;border-radius:44px;margin:10px auto 28px;transform:rotate(-1.5deg)}
+.static-steps .center-phone .device-interior{border-radius:37px}
+.static-steps .center-phone .demo{max-width:none;margin:0;padding:60px 17px 32px}
+.static-steps .center-phone .demo-top{margin-bottom:22px;font-size:12px}
+.static-steps .center-phone .query{min-height:75px;padding:15px;font-size:13px}
+.static-steps .center-phone .result{margin-top:22px;padding:14px 10px}
+.static-steps .center-phone .result strong{font-size:12px}
+.static-steps .center-phone .result p{font-size:10px}
+.static-steps .recommendation-context{margin:18px 2px;font-size:12px}
+.static-steps .screen-call-action{padding:13px;font-size:12px}
+.static-steps .screen-input{font-size:10px;bottom:36px;left:18px;right:18px}
+.static-steps .center-phone .transcript p,.static-steps .center-phone .messages p{opacity:1;padding:12px;font-size:12px}
+.static-steps .center-phone .calendar>span{padding:13px;font-size:12px}
+.static-steps .call-avatar{width:48px;height:48px;margin:18px auto 12px}
+.static-steps .call-name{font-size:16px}
+.static-steps .center-phone .wave{margin:15px 0}
+.static-steps .scene-intent{text-align:center;order:3;width:min(380px,100%);margin:18px auto 0;display:block;position:static}
+.static-steps .scene-intent p{font-size:16px;line-height:1.6}
+.static-steps .center-monitor{width:min(480px,100%);margin-bottom:45px}
+.static-steps .editorial-demo-label{margin-top:24px}
+.static-story~.tracker,.mobile-cta{display:none}
+@media (width<=767px){.static-story .stage{min-height:0}.static-story .hero{padding:115px 22px 72px}.hero h1{letter-spacing:-.045em;text-wrap:balance;font-size:clamp(36px,8.7vw,58px);line-height:1.07}.hero>p{font-size:16px;line-height:1.65}.static-steps .editorial-story{padding:56px 20px 42px}.static-steps .scene-heading h2{font-size:clamp(28px,7.4vw,38px);line-height:1.13}.static-steps .purpose-step strong{font-size:11px}.static-steps .center-phone{--phone-h:min(550px, 140vw)}.booking-calendar{border-radius:18px;margin-left:-12px;margin-right:-12px}.booking-calendar-header{padding:18px 14px;font-size:11px}.booking-calendar iframe{height:1100px}.finale-walk{padding-bottom:56px}.nav-cta{min-height:42px}}
+@media (prefers-reduced-motion:reduce){*,:before,:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+html[data-motion=reduce] .wave i{animation:none}
+.story-panel[aria-hidden=true] .wave i{animation-play-state:paused}
+html[data-motion=reduce] *,html[data-motion=reduce] :before,html[data-motion=reduce] :after{animation-duration:.01ms!important;animation-iteration-count:1!important}
+#booking{padding-top:72px;padding-bottom:44px}
+#booking .final-route{margin-bottom:28px}
+#booking h2{margin:18px 0}
+#booking>p{margin:18px auto 24px}
+#booking .booking-calendar{border-radius:20px;max-width:640px;margin-top:26px}
+#booking .booking-calendar-header{padding:16px 22px}
+#booking .booking-calendar iframe{height:650px}
+#booking .booking-alternative{margin-top:16px}
+@media (width<=767px){#booking{padding-top:48px;padding-bottom:32px}#booking .booking-calendar{margin-top:22px}#booking .booking-calendar-header{padding:16px 14px}#booking .booking-calendar iframe{height:700px}}
+.scroll-story .stage{background:radial-gradient(at 15% 20%,#deddf780,#0000 48%),radial-gradient(at 88% 70%,#badef977,#0000 50%),linear-gradient(125deg,#fbfaf7,#f0f5fc 55%,#f8f9fd)}
+.scroll-story .editorial-story{background:0 0}
+.scroll-story .scene-heading{transform:translateY(calc(var(--handoff-in,0) * 26px - var(--handoff-out,0) * 22px))}
+.scroll-story .purpose-motion,.scroll-story .scene-intent{transform:translateY(calc(var(--handoff-in,0) * 14px - var(--handoff-out,0) * 12px))}
+.scroll-story .center-monitor{transform:translateY(calc(var(--handoff-in,0) * 18px - var(--handoff-out,0) * 12px)) scale(calc(1 - var(--handoff-in,0) * .04))}
+[data-reveal-pending]{opacity:0}
+.scroll-story .center-phone{transform:perspective(1400px) translate3d(calc(var(--phone-arrival,0) * 30px - var(--handoff-out,0) * 20px),calc(var(--phone-arrival,0) * 32px - var(--phone-drift,0) * 9px),0) rotateY(var(--phone-spin,0deg)) rotateZ(calc(-2deg + var(--phone-arrival,0) * 6deg - var(--handoff-out,0) * 3deg)) scale(calc(1 - var(--phone-arrival,0) * .065 - var(--handoff-out,0) * .025))}
+.gap-number,.build-navigation button>span,.answer-item button>small,.counter{font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){[data-reveal-pending]{opacity:1}}
+.faq-illustration{width:100%;max-width:260px;height:150px;margin:22px auto}
+.faq-illustration svg{stroke:#7492ba;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;width:100%;height:100%;display:block}
+.faq-illustration rect,.faq-person,.faq-illustration-1>svg>path:first-child{fill:#f8fbff}
+.faq-illustration .faq-accent{stroke:#0879ed;stroke-width:3px}
+.faq-illustration .faq-draw{stroke-dasharray:240;stroke-dashoffset:240px;animation:1.2s .12s forwards faq-draw}
+.faq-calendar-cell,.faq-person{transform-origin:50%;animation:.7s cubic-bezier(.22,1,.36,1) both faq-pop}
+.faq-voice{stroke:#0879ed;stroke-width:5px;transform-origin:50%;animation:.65s ease-in-out 4 alternate faq-voice}
+.faq-dot{fill:#0879ed;animation:.8s both faq-pop}
+.faq-scan{animation:1.2s both faq-scan}
+@keyframes faq-draw{to{stroke-dashoffset:0}}
+@keyframes faq-pop{0%{opacity:0;transform:translateY(12px)scale(.85)}to{opacity:1;transform:none}}
+@keyframes faq-voice{0%{transform:scaleY(.35)}to{transform:scaleY(1)}}
+@keyframes faq-scan{0%{opacity:0;transform:translate(-18px,-10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.faq-illustration .faq-draw{stroke-dashoffset:0}}
+html[data-motion=reduce] .faq-illustration .faq-draw{stroke-dashoffset:0}
+footer a{color:#526582;font-size:12px;text-decoration:none}
+footer a:hover{color:#175ce5;text-decoration:underline}
+[data-reveal-pending]:focus-within{opacity:1}

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://avanor.solutions/</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://avanor.solutions/plastic-surgeons/</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://avanor.solutions/plumbers/</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://avanor.solutions/window-siding-replacement/</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://avanor.solutions/privacy/</loc><lastmod>2026-10-17</lastmod></url>
-  <url><loc>https://avanor.solutions/terms/</loc><lastmod>2026-10-17</lastmod></url>
-  <url><loc>https://avanor.solutions/cookies/</loc><lastmod>2026-10-17</lastmod></url>
+  <url><loc>https://avanor.solutions/</loc></url>
+  <url><loc>https://avanor.solutions/privacy/</loc></url>
+  <url><loc>https://avanor.solutions/terms/</loc></url>
+  <url><loc>https://avanor.solutions/cookies/</loc></url>
 </urlset>

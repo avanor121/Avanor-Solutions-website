@@ -12,15 +12,15 @@ const pages=[
     dir:'dist/plumbers',
     title:'For Plumbing Companies — Avanor Solutions',
     hero:'For Plumbing Companies — Avanor Solutions',
-    meta:'A considered approach to inquiry handling and job booking for plumbing companies.',
-    tagline:'A connected experience for your customers.',
+    meta:'A clearer path from local search and urgent calls to booked plumbing work.',
+    tagline:'A connected customer path for plumbing companies.',
   },
   {
     dir:'dist/window-siding-replacement',
-    title:'For Window and Siding Replacement Companies — Avanor Solutions',
-    hero:'For Window and Siding Replacement Companies — Avanor Solutions',
-    meta:'A considered approach to inquiry handling and estimate follow-up for window and siding replacement companies.',
-    tagline:'A connected experience for your customers.',
+    title:'For Window & Siding Replacement Companies — Avanor Solutions',
+    hero:'For Window & Siding Replacement Companies — Avanor Solutions',
+    meta:'A considered approach to project inquiries, consultations and follow-up for window and siding replacement companies.',
+    tagline:'A connected customer path for exterior replacement companies.',
   },
 ];
 for(const p of pages){
