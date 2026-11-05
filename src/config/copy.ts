@@ -14,12 +14,13 @@ export const copy = {
   cta: "Book a Free Audit",
   eyebrow: "",
   heroLines: [
-    "If AI doesn't save you serious time",
+    "If AI doesn't save you",
+    "exponential time",
     "or make you",
     "serious money,",
     "it's a toy.",
   ],
-  hero: "If AI doesn't save you serious time or make you serious money, it's a toy.",
+  hero: "If AI doesn't save you exponential time or make you serious money, it's a toy.",
   intro:
     "Book a free audit and we'll show you where it does both. In one call we examine your business and show you the hours saved and the revenue gained, in your numbers, not ours.",
   micro: "Free. 15 to 30 minutes. Your numbers, not ours.",

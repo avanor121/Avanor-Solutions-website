@@ -194,7 +194,7 @@ small {
   pointer-events: auto;
 }
 .hero h1 {
-  font-size: clamp(40px, 8vw, 96px);
+  font-size: clamp(38px, 6.4vw, 76px);
   line-height: 1.045;
   max-width: 1280px;
   margin: auto;
@@ -1001,7 +1001,7 @@ footer p {
     padding-top: 120px;
   }
   .hero h1 {
-    font-size: 96px;
+    font-size: 76px;
   }
   .hero p {
     font-size: 18px;

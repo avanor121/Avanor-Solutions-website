@@ -201,11 +201,12 @@ export default function App() {
             <section className="hero">
               {copy.eyebrow && <div className="eyebrow">{copy.eyebrow}</div>}
               <h1>
-                {copy.heroLines[0]}
-                <br className="desktop-break" /> {copy.heroLines[1]}{" "}
-                <span>{copy.heroLines[2]}</span>
+                {copy.heroLines[0]}{" "}
+                <span>{copy.heroLines[1]}</span>
+                <br className="desktop-break" /> {copy.heroLines[2]}{" "}
+                <span>{copy.heroLines[3]}</span>
                 <br />
-                {copy.heroLines[3]}
+                {copy.heroLines[4]}
               </h1>
               <p>{copy.intro}</p>
               <div className="hero-actions">
