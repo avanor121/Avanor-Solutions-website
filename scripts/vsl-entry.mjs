@@ -28,7 +28,7 @@ for(const p of pages){
     .replace('<head>','<head>\n    <meta name="robots" content="noindex, nofollow" />')
     .replace(/<title>.*?<\/title>/,`<title>${p.title}</title>`)
     .replace("Avanor Solutions — If AI doesn't save you exponential time or make you serious money, it's a toy.",p.hero)
-    .replace('Avanor is an AI consultancy. We audit your business, find where AI saves serious time or makes serious money, then build the workflows and automations. Book a free audit.',p.meta)
+    .replace('Avanor is an AI consultancy. We audit your business, find where AI saves exponential time or makes serious money, then build the workflows and automations. Book a free audit.',p.meta)
     .replace('Book a free audit and we\'ll show you where it does both. In one call we examine your business and show you the hours saved and the revenue gained, in your numbers, not ours.',p.tagline);
   await mkdir(p.dir,{recursive:true});
   await writeFile(`${p.dir}/index.html`,html);
@@ -49,7 +49,7 @@ const services=[
     title:'Free Business Audit — Avanor Solutions',
     hero:'Free Business Audit — Avanor Solutions',
     meta:'A free 15 to 30 minute audit of your business. We examine how work flows and show you the hours saved and the revenue gained, in your numbers.',
-    tagline:'If AI does not save you serious time or make you serious money, it is a toy.',
+    tagline:'If AI does not save you exponential time or make you serious money, it is a toy.',
   },
   {
     dir:'dist/services/custom-ai-workflows',
@@ -84,7 +84,7 @@ for(const p of services){
   const html=base
     .replace(/<title>.*?<\/title>/,`<title>${p.title}</title>`)
     .replace("Avanor Solutions — If AI doesn't save you exponential time or make you serious money, it's a toy.",p.hero)
-    .replace('Avanor is an AI consultancy. We audit your business, find where AI saves serious time or makes serious money, then build the workflows and automations. Book a free audit.',p.meta)
+    .replace('Avanor is an AI consultancy. We audit your business, find where AI saves exponential time or makes serious money, then build the workflows and automations. Book a free audit.',p.meta)
     .replace('Book a free audit and we\'ll show you where it does both. In one call we examine your business and show you the hours saved and the revenue gained, in your numbers, not ours.',p.tagline);
   await mkdir(p.dir,{recursive:true});
   await writeFile(`${p.dir}/index.html`,html);

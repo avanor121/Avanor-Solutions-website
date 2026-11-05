@@ -39,7 +39,7 @@ export const SERVICES: Service[] = [
       "A 15 to 30 minute call. We examine your business and show you the hours you would save and the revenue you would gain, in your numbers.",
     eyebrow: "Services — Free Business Audit",
     headline:
-      "If AI doesn't save you serious time or make you serious money, it's a toy.",
+      "If AI doesn't save you exponential time or make you serious money, it's a toy.",
     highlight: "it's a toy.",
     lead: "Book a free audit and we'll show you where it does both. In one call we examine your business and show you the hours saved and the revenue gained, in your numbers, not ours.",
     price: {
@@ -251,6 +251,6 @@ export const SERVICES_OVERVIEW = {
   eyebrow: "Services",
   headline: "Five ways we put AI to work. Every one starts with a free audit.",
   highlight: "Every one starts with a free audit.",
-  lead: "We audit your business first, find where AI saves serious time or makes serious money, then build exactly that. Nothing generic, nothing off the shelf.",
+  lead: "We audit your business first, find where AI saves exponential time or makes serious money, then build exactly that. Nothing generic, nothing off the shelf.",
   meta: "Five services from Avanor Solutions: a free business audit, custom AI workflows, AI agents, operate and report, and the AI Business Brain. Every one starts with a free audit.",
 };
