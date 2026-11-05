@@ -33,3 +33,59 @@ for(const p of pages){
   await mkdir(p.dir,{recursive:true});
   await writeFile(`${p.dir}/index.html`,html);
 }
+
+// Service pages: indexed (no robots noindex), same base HTML with
+// service-specific titles, descriptions and social copy.
+const services=[
+  {
+    dir:'dist/services',
+    title:'Services — Avanor Solutions',
+    hero:'Services — Avanor Solutions',
+    meta:'Five services from Avanor Solutions: a free business audit, custom AI workflows, AI agents, operate and report, and the AI Business Brain. Every one starts with a free audit.',
+    tagline:'Five ways we put AI to work. Every one starts with a free audit.',
+  },
+  {
+    dir:'dist/services/free-business-audit',
+    title:'Free Business Audit — Avanor Solutions',
+    hero:'Free Business Audit — Avanor Solutions',
+    meta:'A free 15 to 30 minute audit of your business. We examine how work flows and show you the hours saved and the revenue gained, in your numbers.',
+    tagline:'If AI does not save you serious time or make you serious money, it is a toy.',
+  },
+  {
+    dir:'dist/services/custom-ai-workflows',
+    title:'Custom AI Workflows — Avanor Solutions',
+    hero:'Custom AI Workflows — Avanor Solutions',
+    meta:'Custom AI workflows built for your business after a free audit. The repetitive work your team does by hand, done by a workflow instead.',
+    tagline:'The work your team does by hand, every day, done by a workflow instead.',
+  },
+  {
+    dir:'dist/services/ai-agents',
+    title:'AI Agents — Avanor Solutions',
+    hero:'AI Agents — Avanor Solutions',
+    meta:'AI agents that answer first, book the job and follow up, so no customer waits and no enquiry goes cold. Built custom after a free audit.',
+    tagline:'Every call answered. Every lead replied to. Every job booked.',
+  },
+  {
+    dir:'dist/services/operate-and-report',
+    title:'Operate and Report — Avanor Solutions',
+    hero:'Operate and Report — Avanor Solutions',
+    meta:'We operate the AI systems we build for you and report every month in business numbers: booked jobs, hours saved, revenue.',
+    tagline:'We run the systems. You see the numbers.',
+  },
+  {
+    dir:'dist/services/ai-business-brain',
+    title:'AI Business Brain — Avanor Solutions',
+    hero:'AI Business Brain — Avanor Solutions',
+    meta:'One system with every tool in your business connected. Ask it anything and it gives you the exact answer, from across the business.',
+    tagline:'Every tool in your business, connected. Ask it anything.',
+  },
+];
+for(const p of services){
+  const html=base
+    .replace(/<title>.*?<\/title>/,`<title>${p.title}</title>`)
+    .replace('Avanor Solutions — Be the answer.',p.hero)
+    .replace('The Avanor Engine: done-for-you AI search visibility, an AI receptionist and a custom AI CRM for service businesses.',p.meta)
+    .replace('One system. Found. Answered. Closed.',p.tagline);
+  await mkdir(p.dir,{recursive:true});
+  await writeFile(`${p.dir}/index.html`,html);
+}

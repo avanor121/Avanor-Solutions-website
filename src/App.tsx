@@ -182,6 +182,7 @@ export default function App() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#engine">The Engine</a>
+          <a href="/services/">Services</a>
           <a href="#how">How it works</a>
           <a href="#faq">FAQs</a>
         </nav>

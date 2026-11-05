@@ -1,0 +1,388 @@
+/* Services pages — Avanor Solutions.
+   Scoped under .svc-page so the homepage, its animations and its
+   styles are untouched. Inter is loaded from Google Fonts (see
+   index.html); the stack below falls back to the site system stack. */
+
+.svc-page {
+  font-family:
+    "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f6f8fc;
+  color: #14243b;
+  min-height: 100vh;
+  padding: 48px 0 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.svc-nav nav a.active {
+  color: var(--accent, #175ce5);
+  opacity: 1;
+  font-weight: 600;
+}
+
+.svc-section {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 76px 32px 88px;
+}
+
+.svc-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent, #175ce5);
+  margin-bottom: 18px;
+}
+
+.svc-section h1 {
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -0.032em;
+  max-width: 820px;
+  text-wrap: balance;
+  margin: 0;
+}
+
+.svc-accent {
+  color: var(--accent, #175ce5);
+}
+
+.svc-lead {
+  margin: 24px 0 0;
+  font-size: 18px;
+  line-height: 1.65;
+  color: #59687c;
+  max-width: 720px;
+}
+
+.svc-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.svc-card {
+  background: #fff;
+  border: 1px solid #e5eaf2;
+  border-radius: 20px;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 2px rgba(20, 36, 59, 0.04);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.svc-card:hover {
+  transform: translateY(-3px);
+  border-color: #c9d6ea;
+  box-shadow: 0 14px 32px rgba(20, 36, 59, 0.09);
+}
+
+.svc-card-free {
+  border: 2px solid var(--accent, #175ce5);
+}
+
+.svc-tag {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--accent, #175ce5);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  padding: 5px 12px;
+  margin-bottom: 14px;
+}
+
+.svc-num {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #8a99ae;
+  margin-bottom: 14px;
+}
+
+.svc-card h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.svc-card p {
+  margin: 12px 0 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #59687c;
+  flex: 1;
+}
+
+.svc-go {
+  margin-top: 20px;
+  color: var(--accent, #175ce5);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.svc-price-row {
+  margin-top: 40px;
+  display: flex;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.svc-price-box {
+  background: #fff;
+  border: 1px solid #e5eaf2;
+  border-radius: 20px;
+  padding: 28px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(20, 36, 59, 0.04);
+}
+
+.svc-price-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a99ae;
+}
+
+.svc-price-amount {
+  margin-top: 12px;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.svc-strike {
+  text-decoration: line-through;
+  color: #94a3b8;
+  font-size: 30px;
+}
+
+.svc-price-free {
+  border: 2px solid var(--accent, #175ce5);
+  background: #eef4ff;
+}
+
+.svc-price-box p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #59687c;
+}
+
+.svc-steps {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.svc-step {
+  background: #fff;
+  border: 1px solid #e5eaf2;
+  border-radius: 20px;
+  padding: 26px 24px;
+  box-shadow: 0 1px 2px rgba(20, 36, 59, 0.04);
+}
+
+.svc-step-k {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--accent, #175ce5);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.svc-step h3 {
+  margin: 12px 0 0;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.svc-step p {
+  margin: 10px 0 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #59687c;
+}
+
+.svc-examples {
+  margin-top: 48px;
+}
+
+.svc-examples > h3 {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.svc-ex-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.svc-ex {
+  background: #fff;
+  border: 1px solid #e5eaf2;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 1px 2px rgba(20, 36, 59, 0.04);
+}
+
+.svc-ex h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.svc-ex p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #59687c;
+}
+
+.svc-disclaimer {
+  margin-top: 40px;
+  background: #fff8e6;
+  border: 1px solid #f2d492;
+  border-radius: 20px;
+  padding: 22px 26px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #6b5416;
+}
+
+.svc-disclaimer strong {
+  color: #4a3a08;
+}
+
+.svc-cta-band {
+  margin-top: 56px;
+  background: #14243b;
+  border-radius: 20px;
+  padding: 44px 36px;
+  text-align: center;
+}
+
+.svc-cta-band h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.svc-cta-band p {
+  margin: 14px 0 0;
+  color: #dbe4f2;
+  font-size: 16px;
+}
+
+.svc-cta-button {
+  margin-top: 26px;
+  border: 0;
+  background: var(--accent, #175ce5);
+  color: #fff;
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    box-shadow 0.2s;
+}
+
+.svc-cta-button:hover {
+  background: var(--hover, #0077ed);
+  box-shadow: 0 4px 15px #0071e322;
+}
+
+.svc-footer > div > div {
+  display: flex;
+  gap: 20px;
+}
+
+@keyframes svc-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.svc-fade {
+  animation: svc-fade-up 0.55s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .svc-fade {
+    animation: none;
+  }
+  .svc-card,
+  .svc-cta-button {
+    transition: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .svc-grid,
+  .svc-steps,
+  .svc-ex-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .svc-section {
+    padding: 56px 20px 64px;
+  }
+  .svc-section h1 {
+    font-size: 33px;
+  }
+  .svc-lead {
+    font-size: 16px;
+  }
+  .svc-grid,
+  .svc-steps,
+  .svc-ex-grid {
+    grid-template-columns: 1fr;
+  }
+  .svc-price-row {
+    flex-direction: column;
+  }
+  .svc-cta-band {
+    padding: 32px 22px;
+  }
+  .svc-cta-band h3 {
+    font-size: 23px;
+  }
+}

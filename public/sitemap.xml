@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://avanor.solutions/</loc></url>
+  <url><loc>https://avanor.solutions/services/</loc></url>
+  <url><loc>https://avanor.solutions/services/free-business-audit/</loc></url>
+  <url><loc>https://avanor.solutions/services/custom-ai-workflows/</loc></url>
+  <url><loc>https://avanor.solutions/services/ai-agents/</loc></url>
+  <url><loc>https://avanor.solutions/services/operate-and-report/</loc></url>
+  <url><loc>https://avanor.solutions/services/ai-business-brain/</loc></url>
   <url><loc>https://avanor.solutions/privacy/</loc></url>
   <url><loc>https://avanor.solutions/terms/</loc></url>
   <url><loc>https://avanor.solutions/cookies/</loc></url>
