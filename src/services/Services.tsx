@@ -35,7 +35,7 @@ function ServiceNav({ active }: { active: "services" }) {
         {BRAND_NAME}
       </a>
       <nav aria-label="Main navigation">
-        <a href="/#engine">The Engine</a>
+        <a href="/#engine">What we do</a>
         <a href="/services/" className={active === "services" ? "active" : ""}>
           Services
         </a>

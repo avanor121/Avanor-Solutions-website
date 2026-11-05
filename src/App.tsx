@@ -12,7 +12,7 @@ import { theme } from "./config/theme";
 import { progress, scenes, clamp, smooth } from "./config/scenes";
 import { useMedia } from "./hooks/useMotion";
 import Story, { Demo, ScenePhoto } from "./overlay/Story";
-import { Connected, Opportunity, Engine, How, Fit, FAQ, Finale } from "./components/Walkthrough";
+import { Connected, Opportunity, Engine, Industries, How, Proof, Fit, FAQ, Finale } from "./components/Walkthrough";
 gsap.registerPlugin(ScrollTrigger);
 const dollars = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -174,14 +174,14 @@ export default function App() {
   return (
     <>
       <a className="skip" href="#engine">
-        Skip to the Avanor Engine
+        Skip to What we do
       </a>
       <header className="nav">
         <a className="wordmark" href="#" aria-label="Avanor Solutions home">
           {BRAND_NAME}
         </a>
         <nav aria-label="Main navigation">
-          <a href="#engine">The Engine</a>
+          <a href="#engine">What we do</a>
           <a href="/services/">Services</a>
           <a href="#how">How it works</a>
           <a href="#faq">FAQs</a>
@@ -262,7 +262,9 @@ export default function App() {
           <Connected open={open}/>
           <Opportunity/>
           <Engine open={open}/>
+          <Industries/>
           <How/>
+          <Proof open={open}/>
           <Fit open={open}/>
           <FAQ/>
           <Finale open={open}/>

@@ -1,6 +1,6 @@
 :root {
   font-family:
-    -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--text, #1d1d1f);
   background: white;

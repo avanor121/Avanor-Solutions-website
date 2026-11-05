@@ -27,9 +27,9 @@ for(const p of pages){
   const html=base
     .replace('<head>','<head>\n    <meta name="robots" content="noindex, nofollow" />')
     .replace(/<title>.*?<\/title>/,`<title>${p.title}</title>`)
-    .replace('Avanor Solutions — Be the answer.',p.hero)
-    .replace('The Avanor Engine: done-for-you AI search visibility, an AI receptionist and a custom AI CRM for service businesses.',p.meta)
-    .replace('One system. Found. Answered. Closed.',p.tagline);
+    .replace("Avanor Solutions — If AI doesn't save you serious time or make you serious money, it's a toy.",p.hero)
+    .replace('Avanor is an AI consultancy. We audit your business, find where AI saves serious time or makes serious money, then build the workflows and automations. Book a free audit.',p.meta)
+    .replace('Book a free audit and we\'ll show you where it does both. In one call we examine your business and show you the hours saved and the revenue gained, in your numbers, not ours.',p.tagline);
   await mkdir(p.dir,{recursive:true});
   await writeFile(`${p.dir}/index.html`,html);
 }
@@ -83,9 +83,9 @@ const services=[
 for(const p of services){
   const html=base
     .replace(/<title>.*?<\/title>/,`<title>${p.title}</title>`)
-    .replace('Avanor Solutions — Be the answer.',p.hero)
-    .replace('The Avanor Engine: done-for-you AI search visibility, an AI receptionist and a custom AI CRM for service businesses.',p.meta)
-    .replace('One system. Found. Answered. Closed.',p.tagline);
+    .replace("Avanor Solutions — If AI doesn't save you serious time or make you serious money, it's a toy.",p.hero)
+    .replace('Avanor is an AI consultancy. We audit your business, find where AI saves serious time or makes serious money, then build the workflows and automations. Book a free audit.',p.meta)
+    .replace('Book a free audit and we\'ll show you where it does both. In one call we examine your business and show you the hours saved and the revenue gained, in your numbers, not ours.',p.tagline);
   await mkdir(p.dir,{recursive:true});
   await writeFile(`${p.dir}/index.html`,html);
 }

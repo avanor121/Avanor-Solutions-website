@@ -25,7 +25,7 @@ export function Demo({ index }: { index: number }) {
       {index === 1 && (
         <>
           <div className="demo-top">
-            AI Receptionist <span className="live">Live</span>
+            AI Agent <span className="live">Live</span>
           </div>
           <div className="call-avatar">A<span/></div><div className="call-name">Your Business</div><small className="call-subtitle">Answers · qualifies · books</small><div className="wave">
             {Array.from({ length: 24 }, (_, i) => (
@@ -44,7 +44,7 @@ export function Demo({ index }: { index: number }) {
       {index === 2 && (
         <>
           <div className="demo-top">
-            Booking Agent <span>Tuesday</span>
+            Booking <span>Tuesday</span>
           </div>
           <h3>Choose a time.</h3>
           <div className="calendar-month"><strong>October</strong><span>‹ &nbsp; ›</span></div><div className="calendar-week">{["M","T","W","T","F","S","S"].map((d,i)=><span key={i}>{d}<b className={i===1?"selected-day":""}>{19+i}</b></span>)}</div><div className="calendar">
@@ -60,7 +60,7 @@ export function Demo({ index }: { index: number }) {
       {index === 3 && (
         <>
           <div className="demo-top">
-            Reminder Agent <span>↗</span>
+            Follow-up <span>↗</span>
           </div>
           <div className="messages">
             {copy.messages.map((s, i) => (
