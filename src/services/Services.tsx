@@ -4,6 +4,7 @@ import { theme } from "../config/theme";
 import { copy } from "../config/copy";
 import { SERVICES, SERVICES_OVERVIEW, type Service } from "./data";
 import { Connected, Industries } from "../components/Walkthrough";
+import { ReceptionistStory } from "../components/ReceptionistStory";
 import { ServicesMenu } from "../components/ServiceMenu";
 import "./services.css";
 
@@ -162,6 +163,7 @@ export function ServiceDetail({ slug }: { slug: string }) {
       : "Services — Avanor Solutions";
   }, [service]);
   if (!service) return <ServicesOverview />;
+  const isAgents = service.slug === "ai-agents";
   return (
     <>
       <a className="skip" href="#service">
@@ -169,7 +171,10 @@ export function ServiceDetail({ slug }: { slug: string }) {
       </a>
       <ServiceNav active="services" />
       <main className="svc-page">
-        <section id="service" className="svc-section svc-fade">
+        <section
+          id="service"
+          className={`svc-section svc-fade${isAgents ? " svc-section--before-story" : ""}`}
+        >
           <div className="svc-eyebrow">{service.eyebrow}</div>
           <h1>{renderHeadline(service.headline, service.highlight)}</h1>
           <p className="svc-lead">{service.lead}</p>
@@ -209,9 +214,17 @@ export function ServiceDetail({ slug }: { slug: string }) {
               </div>
             ))}
           </div>
-          {service.slug === "ai-agents" && <Connected open={openBooking} />}
-          <CtaBand title={service.ctaTitle} sub={service.ctaSub} />
+          {!isAgents && (
+            <CtaBand title={service.ctaTitle} sub={service.ctaSub} />
+          )}
         </section>
+        {isAgents && <ReceptionistStory />}
+        {isAgents && (
+          <section className="svc-section svc-section--after-story">
+            <Connected open={openBooking} />
+            <CtaBand title={service.ctaTitle} sub={service.ctaSub} />
+          </section>
+        )}
       </main>
       <ServiceFooter />
     </>

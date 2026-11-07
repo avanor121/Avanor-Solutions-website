@@ -397,3 +397,52 @@
 .svc-page .industries-walk {
   padding: 64px 0 8px;
 }
+
+/* AI Agents page: the receptionist story sits between the steps and the
+   interactive demo, full-width like the old homepage journey. */
+.svc-section--before-story {
+  padding-bottom: 24px;
+}
+.svc-section--after-story {
+  padding-top: 0;
+}
+.svc-story {
+  background: #fff;
+}
+.svc-story-head {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 72px 24px 0;
+}
+.svc-story-head .svc-eyebrow {
+  margin-bottom: 14px;
+}
+/* In the pinned story the heading is a title card inside the stage: it
+   fills the first stretch of the scroll (before the first scene fades in)
+   and fades out exactly like the old homepage hero did. */
+.svc-story-head--in-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  pointer-events: none;
+}
+.svc-story-head h2 {
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0 0 14px;
+}
+.svc-story-head p {
+  font-size: 16px;
+  line-height: 1.55;
+  color: #5b6b82;
+  max-width: 620px;
+  margin: 0 auto;
+}
