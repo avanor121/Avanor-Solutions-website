@@ -1379,3 +1379,98 @@ footer p {
 @media(max-width:767px){.editorial-story{padding:72px 16px 75px}.editorial-story .scene-heading h2{font-size:31px}.purpose-motion{width:100%;height:74px;flex-basis:74px;gap:7px;margin:20px auto 10px}.purpose-step strong{font-size:9px;line-height:1.3;margin-top:9px}.purpose-number{width:25px;height:25px;font-size:9px;box-shadow:0 0 0 5px #fff}.purpose-track{top:12px}.scene-intent{display:none}.center-phone{--phone-h:clamp(375px,calc(100svh - 355px),485px);width:calc(var(--phone-h)/2.08);height:var(--phone-h);flex:0 0 var(--phone-h);margin:8px auto 0;border-radius:37px;transform:rotateY(var(--phone-spin,0deg)) rotateZ(-2deg)}.center-phone .device-interior{border-radius:30px}.center-phone .demo{padding:48px 12px 25px}.center-phone .demo-top{font-size:10px;padding-bottom:12px;margin-bottom:17px}.center-phone .query{font-size:11px;padding:11px;min-height:62px}.center-phone .result{padding:10px 8px;gap:6px;margin-top:18px}.center-phone .result strong{font-size:11px}.center-phone .result p{font-size:9px}.recommendation-context{font-size:10px;line-height:1.6;margin:14px 2px}.screen-call-action{font-size:10px;padding:11px}.screen-input{font-size:9px;padding:9px 12px;bottom:32px;left:13px;right:13px}.center-phone .device-topline{font-size:9px;left:20px;right:18px;top:20px}.device-topline i{width:65px;height:20px}.status-icons svg{width:27px}.call-avatar{width:38px;height:38px;font-size:20px;margin-bottom:7px}.call-name{font-size:13px}.center-phone .wave{height:36px;margin:10px 0}.center-phone .transcript p{font-size:9px;padding:7px;margin:8px 0}.call-controls{gap:10px;margin-top:13px}.call-controls>span{width:27px;height:27px}.center-phone .messages p{font-size:10px;padding:9px;margin:12px 0}.center-phone h3{font-size:22px}.calendar-month{margin:20px 0 13px}.calendar-week b{width:23px;font-size:10px}.center-phone .calendar>span{padding:10px;font-size:10px}.editorial-demo-label{margin-top:13px}.center-monitor{width:320px;margin-top:45px}.static-steps .purpose-motion{width:100%;height:90px}}
 @media(prefers-reduced-motion:reduce){.center-phone{transform:none!important;will-change:auto}.phone-rear{display:none}}
 .review-phone{--phone-h:clamp(420px,calc(100svh - 365px),590px)}.review-phone .demo{padding:61px 18px 28px}.review-flow{height:100%;position:relative}.review-request,.review-submitted{position:absolute;inset:0;display:flex;flex-direction:column}.review-request{opacity:clamp(0,calc((.62 - var(--scene-progress,.5))*4),1);transform:translateY(calc((var(--scene-progress,.5) - .2)*-34px));pointer-events:none}.review-submitted{align-items:center;justify-content:center;text-align:center;opacity:clamp(0,calc((var(--scene-progress,.5) - .48)*4),1);transform:translateY(calc((1 - var(--scene-progress,.5))*30px)) scale(calc(.94 + var(--scene-progress,.5)*.06));pointer-events:none}.review-app-bar{display:flex;align-items:center;gap:8px;padding-bottom:17px;border-bottom:1px solid #e5eaf1;font-size:11px;font-weight:600}.review-app-bar i{margin-left:auto;font-style:normal;color:#708096}.review-business-mark{display:grid;place-items:center;width:25px;height:25px;border-radius:8px;background:#e4f0ff;color:#1769e8;font-weight:700}.review-message{margin-top:28px;padding:20px 16px;border:1px solid #dbe6f2;border-radius:18px;background:linear-gradient(145deg,#fff,#f1f6fc);box-shadow:0 12px 26px #193d6b0b}.review-message small,.review-submitted small{font-size:8px;letter-spacing:.12em;color:#6980a0}.review-message strong{display:block;font-size:19px;line-height:1.15;letter-spacing:-.04em;margin:12px 0}.review-message p,.review-submitted p{font-size:10px;line-height:1.6;color:#61738a;margin:0}.review-action{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding:13px 15px;border-radius:12px;background:#1769e8;color:#fff;font-size:11px;font-weight:600;box-shadow:0 8px 18px #1769e830}.review-success{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:#e4f5ed;color:#198b55;font-size:27px;margin-bottom:16px;box-shadow:0 0 0 10px #e4f5ed66}.review-submitted strong{font-size:19px;line-height:1.2;letter-spacing:-.04em;margin:12px 15px}.review-stars{display:flex;gap:3px;margin:18px 0 12px;color:#f1ab2d;font-size:21px;letter-spacing:1px}.review-stars i{font-style:normal;opacity:clamp(0,calc((var(--scene-progress,.5) - .5)*6),1);transform:translateY(calc((1 - var(--scene-progress,.5))*12px));transition:none}.review-stars i:nth-child(2){transition-delay:.05s}.review-stars i:nth-child(3){transition-delay:.1s}.review-stars i:nth-child(4){transition-delay:.15s}.review-stars i:nth-child(5){transition-delay:.2s}@media(max-width:767px){.review-phone .demo{padding:48px 12px 25px}.review-message{margin-top:19px;padding:16px 12px}.review-message strong{font-size:17px}.review-action{padding:11px 12px}.review-submitted strong{font-size:17px}}
+
+/* Services dropdown in the nav: hover the Services link to see every
+   service headline; click one to go to that service page. */
+.nav-services {
+  position: relative;
+}
+.nav-services > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.nav-services-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  width: 430px;
+  max-width: calc(100vw - 32px);
+  background: #fff;
+  border: 1px solid #e3e8f0;
+  border-radius: 18px;
+  box-shadow: 0 24px 60px #16315a1f;
+  padding: 8px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .18s, transform .18s, visibility .18s;
+  z-index: 40;
+}
+.nav-services-menu::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
+  height: 14px;
+}
+.nav-services:hover .nav-services-menu,
+.nav-services:focus-within .nav-services-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(10px);
+}
+.nav-services-item {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+.nav-services-item:hover {
+  background: #f2f6fc;
+}
+.nav-services-item strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #14243b;
+}
+.nav-services-item span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #64748a;
+  margin-top: 3px;
+}
+.nav-services-all {
+  display: block;
+  padding: 12px 14px;
+  border-top: 1px solid #e8edf3;
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent, #175ce5);
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .nav-services-menu {
+    display: none;
+  }
+}
+
+/* Hero without the scroll story: centre the content in the viewport
+   instead of leaving the lower half empty. The h1 margin override stops
+   it absorbing the free space as a flex item. */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  margin: 0 auto;
+}

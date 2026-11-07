@@ -3,7 +3,8 @@ import { BRAND_NAME, BOOKING_URL } from "../config/settings";
 import { theme } from "../config/theme";
 import { copy } from "../config/copy";
 import { SERVICES, SERVICES_OVERVIEW, type Service } from "./data";
-import { Connected } from "../components/Walkthrough";
+import { Connected, Industries } from "../components/Walkthrough";
+import { ServicesMenu } from "../components/ServiceMenu";
 import "./services.css";
 
 const openBooking = () =>
@@ -36,10 +37,7 @@ function ServiceNav({ active }: { active: "services" }) {
         {BRAND_NAME}
       </a>
       <nav aria-label="Main navigation">
-        <a href="/#engine">What we do</a>
-        <a href="/services/" className={active === "services" ? "active" : ""}>
-          Services
-        </a>
+        <ServicesMenu active={active === "services"} />
         <a href="/#how">How it works</a>
         <a href="/#faq">FAQs</a>
       </nav>
@@ -121,6 +119,7 @@ export function ServicesOverview() {
               </a>
             ))}
           </div>
+          <Industries />
           <CtaBand
             title="Find out where AI pays in your business."
             sub="Free. 15 to 30 minutes. Your numbers, not ours."

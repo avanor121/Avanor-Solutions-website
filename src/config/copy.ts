@@ -57,8 +57,8 @@ export const copy = {
         "Ads and local search can create the inquiry. They cannot make your team answer it in time.",
       ],
       [
-        "Missed calls become missed jobs",
-        "When a call or form waits, the customer keeps looking. The next business gets the conversation.",
+        "A slow first response loses the job",
+        "When a call, form or message waits, the customer keeps looking. The next business gets the conversation.",
       ],
       [
         "Quotes quietly die",

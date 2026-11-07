@@ -392,3 +392,8 @@
 .svc-page .connected-walk {
   padding: 72px 0 8px;
 }
+
+/* Industries strip (moved from the homepage) on the Services overview. */
+.svc-page .industries-walk {
+  padding: 64px 0 8px;
+}
