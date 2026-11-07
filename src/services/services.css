@@ -386,3 +386,9 @@
     font-size: 23px;
   }
 }
+
+/* Interactive demo (moved from the homepage) on the AI Agents page:
+   the homepage .section padding is too roomy inside .svc-section. */
+.svc-page .connected-walk {
+  padding: 72px 0 8px;
+}

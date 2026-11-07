@@ -12,7 +12,7 @@ import { theme } from "./config/theme";
 import { progress, scenes, clamp, smooth } from "./config/scenes";
 import { useMedia } from "./hooks/useMotion";
 import Story, { Demo, ScenePhoto } from "./overlay/Story";
-import { Connected, Opportunity, Engine, Industries, How, Proof, Fit, FAQ, Finale } from "./components/Walkthrough";
+import { Opportunity, Engine, Industries, How, Proof, Fit, FAQ, Finale } from "./components/Walkthrough";
 gsap.registerPlugin(ScrollTrigger);
 const dollars = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -260,7 +260,6 @@ export default function App() {
           ))}
         </aside>
         <div className="normal-flow">
-          <Connected open={open}/>
           <Opportunity/>
           <Engine open={open}/>
           <Industries/>

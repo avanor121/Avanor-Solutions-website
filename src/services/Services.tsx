@@ -3,6 +3,7 @@ import { BRAND_NAME, BOOKING_URL } from "../config/settings";
 import { theme } from "../config/theme";
 import { copy } from "../config/copy";
 import { SERVICES, SERVICES_OVERVIEW, type Service } from "./data";
+import { Connected } from "../components/Walkthrough";
 import "./services.css";
 
 const openBooking = () =>
@@ -209,6 +210,7 @@ export function ServiceDetail({ slug }: { slug: string }) {
               </div>
             ))}
           </div>
+          {service.slug === "ai-agents" && <Connected open={openBooking} />}
           <CtaBand title={service.ctaTitle} sub={service.ctaSub} />
         </section>
       </main>
